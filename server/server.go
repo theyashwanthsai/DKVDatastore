@@ -17,10 +17,10 @@ type Server struct{
 	db *sync.Map
 }
 
-func NewServer(r *raft.Raft) *Server {
+func NewServer(r *raft.Raft, db *sync.Map) *Server {
 	return &Server{
 		r:  r,
-		db: &sync.Map{},
+		db: db,
 	}
 }
 

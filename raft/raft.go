@@ -23,7 +23,11 @@ type Fsm struct{
 	db *sync.Map
 }
 
-
+func NewFsm(db *sync.Map) *Fsm {
+    return &Fsm{
+        db,
+    }
+}
 
 type setPayload struct{
 	Key string
