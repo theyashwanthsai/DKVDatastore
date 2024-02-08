@@ -1,20 +1,9 @@
 # KVDatastore
-A simple implementation of a nosql "database" using go. Experimental, built for learning purposes
+Minimal distributed key-value datastore
 
-### Basic Idea:
-```plaintext
--Database
-    -User1
-        -Cluster1
-            -User1_Cluster1.json
-        -Cluster2
-    -User2
-        -Cluster1
-            -User2_Cluster1.json
-```
+This is a minimal key value store written in golang, uses concepts of distributed computing and raft consensus algorithm. Uses the hashicorp's raft library. 
 
-## Todo
-A basic roadmap
-- [ ] Read, Delete all of data. readAll, deleteMany.
-- [ ] Read, Add, Delete, Update a particular data.
-- [ ] Create a struct/driver to carry out functions/methods
+
+
+## References
+Based on [A minimal distributed key-value database with Hashicorp's Raft library](https://notes.eatonphil.com/minimal-key-value-store-with-hashicorp-raft.html)
