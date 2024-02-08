@@ -3,6 +3,7 @@ Minimal distributed key-value datastore
 
 This is a minimal key value store written in golang, uses concepts of distributed computing and raft consensus algorithm. Uses the hashicorp's raft library. 
 
+*Note* this project is simply to gain more knowledge on the raft consensus algorithm. 
 
 
 ## References
