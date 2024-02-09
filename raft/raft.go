@@ -18,7 +18,9 @@ import (
 // three operations to implement. Apply, Restore, Snapshot
 // Apply - Keep all the nodes up-to-date
 // Restore - Read all logs and apply them to fsm. Reset all local state
-// Snapshot
+// Snapshot - 
+
+
 type Fsm struct{
 	db *sync.Map
 }

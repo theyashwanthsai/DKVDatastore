@@ -5,6 +5,7 @@ This is a minimal key value store written in golang, uses concepts of distribute
 
 *Note*: This project is simply to gain more knowledge on the raft consensus algorithm. 
 
+![explanation](exp.png)
 
 
 ## Usage
