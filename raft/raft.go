@@ -69,7 +69,6 @@ func (kf *Fsm) Restore(rc io.ReadCloser) error{
 	return rc.Close()
 }
 
-
 type snapshotNoop struct{
 
 }
@@ -84,7 +83,6 @@ func (sn snapshotNoop) Release(){
 func (kf *Fsm) Snapshot() (raft.FSMSnapshot, error){
 	return snapshotNoop{}, nil
 }
-
 
 func SetupRaft(dir, nodeId, raftAddress string, kf *Fsm) (*raft.Raft, error){
 	err := os.MkdirAll(dir, os.ModePerm)

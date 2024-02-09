@@ -1,4 +1,4 @@
-# KVDatastore
+# DKVDatastore
 Minimal distributed key-value datastore
 
 This is a minimal key value store written in golang, uses concepts of distributed computing and raft consensus algorithm. Uses the hashicorp's raft library. 
@@ -38,6 +38,11 @@ curl 'localhost:4040/get?key=x'
 ```bash
 curl 'localhost:4041/get?key=x'
 ```
+
+
+## Todo
+- [ ] Containerize the project
+- [ ] Test cases
 
 
 ## References
