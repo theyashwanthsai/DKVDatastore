@@ -42,7 +42,7 @@ curl 'localhost:4041/get?key=x'
 
 
 ## Todo
-- [ ] Containerize the project
+- [x] Containerize the project
 - [ ] Test cases
 
 

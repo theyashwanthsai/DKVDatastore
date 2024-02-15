@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  node1:
+    build: .
+    command: ["./KVDatastore", "node_id", "1", "raft_port", "3000", "http_port", "4040"]
+    ports:
+      - "3000:3000"
+      - "4040:4040"
+
+  node2:
+    build: .
+    command: ["./KVDatastore", "node_id", "2", "raft_port", "3001", "http_port", "4041"]
+    ports:
+      - "3001:3001"
+      - "4041:4041"
+
